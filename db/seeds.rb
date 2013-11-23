@@ -1,3 +1,5 @@
+# coding: utf-8
+
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
 #
@@ -5,3 +7,5 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+FactoryGirl.create(:funcionario, :nome => "Daniel Amaral de Sousa", :email => "danpcnux@gmail.com", :password => "daniel123", :roles_mask => 1)
