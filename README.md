@@ -1,4 +1,4 @@
 polimetrics
-===========
+========
 
-TCC poli USP
+Este repositório se refere ao Polimetrics

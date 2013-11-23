@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Logos Inov</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= stylesheet_link_tag    "layout_poli/application", :media => "all" %>
+  <%= stylesheet_link_tag    "print", :media => "print" %>
+  <%= javascript_include_tag "js_poli/application" %>
+  <%= csrf_meta_tags %>
+</head>
+
+<% nome_controller = params[:controller].gsub(/[^a-z0-9]/i, "-") %>
+<body class="<%= "#{nome_controller}-controller" %> pull_top">
+  
+  <%= render "layouts/menu" %>
+  
+  <% nome_action = params[:action].gsub(/[^a-z0-9]/i, "-") %>
+    
+  <%= render "layouts/mensagens" %>
+  
+  <%= yield %>
+
+</body>
+</html>
