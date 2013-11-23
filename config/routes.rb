@@ -1,32 +1,7 @@
-ErpInov::Application.routes.draw do
+Polimetrics::Application.routes.draw do
   devise_for :funcionarios
 
-  resources :oss do
-    resources :pagamentos
-    
-    member do
-      post 'acao'
-    end
-  end
-
-
-  resources :pagamentos do
-    member do
-      get 'confirmar'
-    end
-  end
-
-
   resources :funcionarios
-
-  namespace :func do
-    resources :oss, :only => [:index, :show] do
-      member do
-        post 'acao'
-        post 'anexar'
-      end
-    end
-  end
 
   # The priority is based upon order of creation:
   # first created -> highest priority.

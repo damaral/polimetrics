@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-ErpInov::Application.load_tasks
+Polimetrics::Application.load_tasks
