@@ -23,8 +23,9 @@
                 </li>-->
                 <li><a href="planos">PLANOS</a></li>
                 <li><a href="contato">CONTATO</a></li>
-                <li><a href="cadastro">Cadastre-se</a></li>
-                <li><a href="login">Login</a></li>
+                <li><%= link_to "Cadastre-se", new_funcionario_registration_path %></li>
+                <li><%= link_to "Login", new_funcionario_session_path %></li>
+                <li><%= link_to (raw "<i class='icon-share-alt icon-white'></i> Sair"), destroy_funcionario_session_path, :method => :delete %></li>
             </ul>
         </div>
     </div>
