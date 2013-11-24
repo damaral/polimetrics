@@ -25,4 +25,9 @@ class ApplicationController < ActionController::Base
 	  "/sobre"
 	end
 
+	def after_sign_up_path_for(resource_or_scope)
+	  super	  
+	  "/sobre"
+	end
+
 end
